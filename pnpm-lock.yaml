@@ -35,6 +35,18 @@ importers:
 
   config/tsconfig: {}
 
+  packages/auth:
+    devDependencies:
+      '@nsr/eslint-config':
+        specifier: workspace:*
+        version: link:../../config/eslint-config
+      '@nsr/prettier':
+        specifier: workspace:*
+        version: link:../../config/prettier
+      '@nsr/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+
 packages:
 
   '@eslint-community/eslint-utils@4.4.0':
